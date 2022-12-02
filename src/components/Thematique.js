@@ -1,50 +1,7 @@
 import React, {Component} from "react";
-import {Link} from 'react-router-dom'
+import { getThematiques } from "../classes/Util";
 
-const json = [
-    {
-        "id": "1",
-        "name": "Corruption et Engagement d’un représentant du gouvernement",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": false
-    },
-    {
-        "id": "2",
-        "name": "Déontologie et bonne conduite des agents publics",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": false
-    },
-    {
-        "id": "3",
-        "name": "Faune",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": false
-    },
-    {
-        "id": "4",
-        "name": "Flore",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": true
-    },
-    {
-        "id": "5",
-        "name": "Organisation de la lutte contre la corruption",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": true
-    },
-    {
-        "id": "6",
-        "name": "Répression et principes",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
-        "icon": "",
-        "common": false
-    }
-]
+const json = getThematiques();
 
 class Thematique extends Component {
 
@@ -55,7 +12,6 @@ class Thematique extends Component {
                     <div className="content-wrapper">
                         <h2 className="card-title">Thématiques Fréquentes</h2>
                         <div className="row">
-
                             <ThematiqueFrequent id="1"/>
                             <ThematiqueFrequent id="2"/>
                             <ThematiqueFrequent id="3"/>
