@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from "./components/Navbar";
 import TexteJuridique from './components/TexteJuridique';
 import TextesJuridiques from './components/TextesJuridiques';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Thematique from "./components/Thematique";
 
 const texte = {
   "id": "1",
@@ -77,15 +79,28 @@ const textes = [
 
 function App() {
   return (
-    <div className="App">
+    /*<div className="App">
       <header className="App-header">
-        
-        
-        <TextesJuridiques textes={textes} />
-
+        <Navbar/>
       </header>
-    </div>
-  );
+    </div>*/
+    <BrowserRouter>
+        <Navbar/><br/><br/><br/><br/>
+        <Routes>
+            <Route path='/' element={<Navbar/>}/>
+            <Route
+                path='thematiques'
+                element={
+                    <div>
+                        <Thematique/>
+                    </div>
+                }
+            />
+            <Route path='textesJuridiques' element={<TextesJuridiques textes={textes} />}/>
+        </Routes>
+    </BrowserRouter>
+
+);
 }
 
 export default App;
