@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from 'react-router-dom'
 
 class Navbar extends Component {
     render() {
@@ -34,7 +35,7 @@ class Navbar extends Component {
                             data-toggle="offcanvas">
                         <span className="icon-menu"></span>
                     </button>
-                    <button className="btn">Thématique</button>
+                    <Link to='thematiques'> <button className="btn">Thématique</button></Link>
                     <button className="btn">Aide</button>
                     <button className="btn">Assistance</button>
                     <button className="btn">Langue</button>

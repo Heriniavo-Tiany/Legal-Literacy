@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Corruption et Engagement d’un représentant du gouvernement",
+        "description": "",
+        "icon": "",
+        "common": false
+    },
+    {
+        "id": "2",
+        "name": "Déontologie et bonne conduite des agents publics",
+        "description": "",
+        "icon": "",
+        "common": false
+    },
+    {
+        "id": "3",
+        "name": "Faune",
+        "description": "",
+        "icon": "",
+        "common": false
+    },
+    {
+        "id": "4",
+        "name": "Flore",
+        "description": "",
+        "icon": "",
+        "common": true
+    },
+    {
+        "id": "5",
+        "name": "Organisation de la lutte contre la corruption",
+        "description": "",
+        "icon": "",
+        "common": true
+    },
+    {
+        "id": "6",
+        "name": "Répression et principes",
+        "description": "",
+        "icon": "",
+        "common": false
+    }
+]
