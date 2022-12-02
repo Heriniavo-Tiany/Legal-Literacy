@@ -39,9 +39,7 @@ class Navbar extends Component {
                     </button>
                     <Link to='thematiques'> <button className="btn">Thématique</button></Link>
                     <Link to="textesJuridiques"><button className="btn">Textes juridiques</button></Link>
-                    <Link to='thematiques'>
-                        <button className="btn">Thématique</button>
-                    </Link>
+                    <Link to='favoris'><button className="btn">Favoris</button></Link>
                     <button className="btn">Aide</button>
                     <button className="btn">Assistance</button>
                     <button className="btn">Langue</button>
