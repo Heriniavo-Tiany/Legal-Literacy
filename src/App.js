@@ -1,9 +1,9 @@
 import './App.css';
 import Navbar from "./components/Navbar";
-import TexteJuridique from './components/TexteJuridique';
 import TextesJuridiques from './components/TextesJuridiques';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Thematique from "./components/Thematique";
+import RechercheAvance from "./components/RechercheAvance";
 
 const texte = {
     "id": "1",
@@ -89,6 +89,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Navbar/>}/>
                 <Route path='thematiques' element={<Thematique/>}/>
+                <Route path='rechercheAvance' element={<RechercheAvance/>}/>
                 <Route path='textesJuridiques' element={<TextesJuridiques textes={textes}/>}/>
             </Routes>
         </BrowserRouter>

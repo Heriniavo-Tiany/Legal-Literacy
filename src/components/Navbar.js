@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a className="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.svg"
+                    <a className="navbar-brand brand-logo mr-5" href="index.html"><img src="../../public/assets/images/logo.png"
                                                                                        className="mr-2" alt="logo"/></a>
                     <a className="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
                                                                                        alt="logo"/></a>
