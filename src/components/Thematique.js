@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { getThematiques } from "../classes/Util";
+import {t} from "i18next";
 
 const json = getThematiques();
 
@@ -10,7 +11,7 @@ class Thematique extends Component {
             <div className="row">
                 <div className="col-md-8 grid-margin">
                     <div className="content-wrapper">
-                        <h2 className="card-title">Thématiques Fréquentes</h2>
+                        <h2 className="card-title">{t('Thématiques Fréquentes')}</h2>
                         <div className="row">
                             <ThematiqueFrequent id="1"/>
                             <ThematiqueFrequent id="2"/>
@@ -36,14 +37,13 @@ class Thematique extends Component {
 
 function ListThematiques(props) {
     const list = []
-    json.forEach((t) => {
-        list.push(<li>{t.name}</li>)
+    json.forEach((item) => {
+        list.push(<li>{t(item.name)}</li>)
     })
 
     return (
         <div className="card">
             <div className="card-body">
-                <h4 className="card-title">List Unordered</h4>
                 <ul>
                     {list}
                 </ul>
@@ -59,7 +59,7 @@ function ThematiqueFrequent(props) {
         <div className="col-md-6 grid-margin stretch-card">
             <div className="card">
                 <div className="card-body">
-                    <h4 className="card-title">{json[props.id].name}</h4>
+                    <h4 className="card-title">{t(json[props.id].name)}</h4>
                     <p className="card-description">
                         {json[props.id].description}
                     </p>
