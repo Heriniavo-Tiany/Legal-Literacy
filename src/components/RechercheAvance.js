@@ -1,8 +1,12 @@
 import React, {Component} from "react";
+import {getTextesJuridiques} from '../classes/Util';
 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
-// import { colourOptions } from '../data';
+import TextesJuridiques from "./TextesJuridiques";
+
+const textes = getTextesJuridiques();
+
 
 const animatedComponents = makeAnimated();
 
@@ -11,18 +15,6 @@ const colourOptions = [
     {value: 'strawberry', label: 'Strawberry'},
     {value: 'vanilla', label: 'Vanilla'}
 ]
-
-/*export default function AnimatedMulti() {
-    return (
-        <Select
-            closeMenuOnSelect={false}
-            components={animatedComponents}
-            defaultValue={[colourOptions[4], colourOptions[5]]}
-            isMulti
-            options={colourOptions}
-        />
-    );
-}*/
 
 function RechercheAvance() {
     return (
@@ -89,9 +81,22 @@ function RechercheAvance() {
                                     </div>
                                 </div>
                             </form>
+
+
                         </div>
                     </div>
 
+                </div>
+            </div>
+            <div className="col-md-9 grid-margin">
+                <div className="content-wrapper">
+                    <div className="card">
+                        <div className="card-body">
+                            <div className="row g-9">
+                                <TextesJuridiques textes={textes}/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
