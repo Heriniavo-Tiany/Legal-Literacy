@@ -33,7 +33,7 @@ class Navbar extends Component {
                     <Link to='favoris'><button className="btn">Favoris</button></Link>
                     <button className="btn">Aide</button>
                     <button className="btn">Assistance</button>
-                    <Link to="signalement"><button>Signaler</button></Link>
+                    <Link to="signalement" ><button className="btn btn-danger">Signaler</button></Link>
 
                     <div className="dropdown">
                         <button className="btn dropdown-toggle" type="button" id="dropdownMenuIconButton1"
