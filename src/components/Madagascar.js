@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import {t} from "i18next";
-import {getNews} from "../classes/Util";
+import {getBuzz, getNews} from "../classes/Util";
+import Buzz from "../components/Buzz"
 
 
 const news = getNews()
@@ -21,6 +22,11 @@ const json = news.filter((data) => {
 const data = json[0]
 console.log(json)
 
+
+const buzz = getBuzz();
+console.log(buzz);
+
+
 class Madagascar extends Component {
 
     constructor(props) {
@@ -34,6 +40,7 @@ class Madagascar extends Component {
             <div>
                 <br/>
                 <br/>
+                <Buzz buzz={buzz} />
                 <div className="row">
                     <div className="col-md-12 grid-margin">
                         <div className="content-wrapper">
