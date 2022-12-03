@@ -7,9 +7,17 @@ function Favoris(props) {
 
     let data = localStorage.getItem("favorite");
 
+    if (data == null || data.length == 0) {
+        return;
+    }
+
     props.textes.forEach(texte => {
-        if (data.includes(texte.id)) {
-            result.push(<TexteJuridique texte={texte} />)
+        if (texte == null) {
+            return;
+        } else {
+            if (data.includes(texte.id)) {
+                result.push(<TexteJuridique texte={texte} />)
+            }
         }
     });
 
