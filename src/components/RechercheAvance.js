@@ -31,7 +31,10 @@ function RechercheAvance() {
                                         <input type="date" className="form-control" id="inputdate"/>
                                         <br/>
                                     </div>
-
+                                    <div className="col-12">
+                                        <input type="date" className="form-control" id="inputdate2"/>
+                                        <br/>
+                                    </div>
 
                                     <div className="col-12">
                                         <label htmlFor="inputType" className="form-label">Type</label>
