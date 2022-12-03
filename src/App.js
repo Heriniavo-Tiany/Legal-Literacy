@@ -5,8 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Thematique from "./components/Thematique";
 import Favoris from "./components/Favoris";
 import RechercheAvance from "./components/RechercheAvance";
-import { getTextesJuridiques } from './classes/Util.js';
-import { useTranslation } from "react-i18next";
+import {getTextesJuridiques} from './classes/Util.js';
+import {useTranslation} from "react-i18next";
+import Madagascar from "./components/Madagascar";
 import Signalement from './components/Signalement';
 import Buzz from './components/Buzz';
 
@@ -33,18 +34,17 @@ function App() {
 
     return (
         <BrowserRouter>
-            <Navbar /><br /><br /><br /><br />
+            <Navbar/>
             <Routes>
                 <Route path='/' element={
-                    <div>
-                        <Navbar/>
-                        <Buzz buzz={buzz} />
-                    </div>
-                } />
-
+                <div>
+                    <Madagascar/>
+                    <Buzz buzz={buzz} />
+                </div>
+                }/>
                 <Route path='thematiques' element={<div>
-
-                    <select className="custom-select" style={{ width: 200 }} onChange={changeLanguageHandler}>
+                    <br/><br/><br/><br/><br/>
+                    <select className="custom-select" style={{width: 200}} onChange={changeLanguageHandler}>
                         <option value="fr">Français</option>
                         <option value="mg">Malagasy</option>
                     </select>

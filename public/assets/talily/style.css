@@ -1,0 +1,19 @@
+:root {
+    /*colors*/
+    --talily-primary-green: #009455;
+    --talily-primary-black: #252122;
+    --talily-secondary-orange: #F6C25C;
+    --talily-secondary-vert-pomme: #97A861;
+    --talily-secondary-vert-clair: #D5E3A6;
+    --talily-secondary-gris: #828184;
+    --talily-secondary-marron: #7c3c19;
+    --talily-secondary-violet: #663366;
+    --talily-secondary-bleu: #3d4666;
+
+    /*fonts*/
+    --talily-font-primary-1: 'Calibri';
+    --talily-font-primary-2: 'Rockwell';
+    --talily-font-Corps: 'Calibri';
+    --talily-font-Chapeau-Legende: 'Calibri Light';
+    --talily-font-Chapeau-Infos: 'Museo';
+}

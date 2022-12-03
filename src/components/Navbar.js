@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import logo from '../USAID.png';
 
 class Navbar extends Component {
     render() {
@@ -7,10 +8,13 @@ class Navbar extends Component {
         return (
             <nav className="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a className="navbar-brand brand-logo mr-5" href="index.html"><img
-                        src="../../public/assets/images/logo.png"
-                        className="mr-2" alt="logo" /></a>
-                    <a className="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
+                    <a className="navbar-brand brand-logo mr-5" href="/">
+                        {/*<h2 className="card-title">Talily</h2>*/}
+                        <img src={logo}
+                             className="mr-3" alt="logo"/>
+                        {/*<img src={logo} className="App-logo" alt="logo" />*/}
+                    </a>
+                    <a className="navbar-brand brand-logo-mini" href="/"><img src="images/logo-mini.svg"
                         alt="logo" /></a>
                 </div>
                 <div className="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -33,7 +37,7 @@ class Navbar extends Component {
                     <Link to='favoris'><button className="btn">Favoris</button></Link>
                     <button className="btn">Aide</button>
                     <button className="btn">Assistance</button>
-                    <Link to="signalement"><button>Signaler</button></Link>
+                    <Link to="signalement" ><button className="btn btn-danger">Signaler</button></Link>
 
                     <div className="dropdown">
                         <button className="btn dropdown-toggle" type="button" id="dropdownMenuIconButton1"

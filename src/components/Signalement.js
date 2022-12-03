@@ -1,44 +1,76 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 
 function Signalement() {
     return (
         <div>
-            <form>
-                <input type={"text"} name={"title"} placeholder={"Titre"} /><br />
+            <br/>
+            <br/>
+            <div className="col-12 grid-margin stretch-card">
+                <div className="card">
+                    <div className="card-body">
+                        <h4 className="card-title">Signaler un incident</h4>
+                        <form className="forms-sample">
+                            <div className="form-group">
+                                <label htmlFor="exampleInputName1">Titre</label>
+                                <input type="text" className="form-control" id="exampleInputName1"/>
+                            </div>
 
-                <textarea name="description" placeholder="Description..."></textarea><br />
+                            <div className="form-group">
+                                <label htmlFor="exampleTextarea1">Description</label>
+                                <textarea className="form-control" id="exampleTextarea1" rows="4"></textarea>
+                            </div>
 
-                <input type={"text"} name={"description"} placeholder={"Description"} /><br />
+                            <div className="form-group">
+                                <label>Photo</label>
+                                <input type="file" name="img[]" className="file-upload-default"/>
+                                <div className="input-group col-xs-12">
+                                    <input type="text" className="form-control file-upload-info" disabled
+                                           placeholder="Upload Image"/>
+                                    <span className="input-group-append">
+                          <button className="file-upload-browse btn btn-primary" type="button">Upload</button>
+                        </span>
+                                </div>
+                            </div>
 
-                <label>Photo : </label><input type={"file"} name={"proof"} /><br />
+                            <div className="form-group">
+                                <label htmlFor="exampleSelectGender">Etat</label>
+                                <select className="form-control" id="exampleSelectGender">
+                                    <option>Planifié</option>
+                                    <option>En Cours</option>
+                                    <option>Déja fait</option>
+                                </select>
+                            </div>
 
-                <select name="idEtat">
-                    <option value={1}>Planifie</option>
-                    <option value={2}>En cours</option>
-                    <option value={3}>Deja fait</option>
-                </select><br />
+                            <div className="form-group">
+                                <label htmlFor="exampleSelectGender">Province</label>
+                                <select className="form-control" id="exampleSelectGender">
+                                    <option>Antananarivo</option>
+                                    <option>Mahajanga</option>
+                                    <option>Toamasina</option>
+                                    <option>Tulear</option>
+                                    <option>Fianarantsoa</option>
+                                    <option>Atsiranana</option>
+                                </select>
+                            </div>
 
-                <select name="idRegion">
-                    <option value={1}>Antananarivo</option>
-                    <option value={2}>Mahajanga</option>
-                    <option value={3}>Toamasina</option>
-                    <option value={4}>Tulear</option>
-                    <option value={5}>Fianarantsoa</option>
-                    <option value={6}>Atsiranana</option>
-                </select><br />
+                            <div className="form-group">
+                                <label htmlFor="exampleSelectGender">Type</label>
+                                <select className="form-control" id="exampleSelectGender">
+                                    <option>Traffic de bois</option>
+                                    <option>raffic d'animaux</option>
+                                    <option>Incendie</option>
+                                    <option>Extraction industrielles nuisants</option>
+                                </select>
+                            </div>
 
-                <select name="idType">
-                    <option value={1}>Traffic de bois</option>
-                    <option value={2}>Traffic d'animaux</option>
-                    <option value={3}>Incendie</option>
-                    <option value={4}>Extraction industrielles nuisants</option>
-                </select><br />
-
-                <input type={"text"} name={"title"} placeholder={"Titre"} /><br />
-
-                <button type="submit">Envoyer</button>
-            </form>
+                            <button type="submit" className="btn btn-primary mr-2">Submit</button>
+                            <button className="btn btn-light">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+
     )
 };
 
