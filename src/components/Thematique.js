@@ -8,7 +8,9 @@ class Thematique extends Component {
 
     render() {
         return (
+
             <div className="row">
+
                 <div className="col-md-8 grid-margin">
                     <div className="content-wrapper">
                         <h2 className="card-title">{t('Thématiques Fréquentes')}</h2>

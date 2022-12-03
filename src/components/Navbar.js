@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-// import logo from './images/logo.png';
+import logo from '../USAID.png';
 
 class Navbar extends Component {
     render() {
@@ -8,9 +8,12 @@ class Navbar extends Component {
         return (
             <nav className="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div className="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a className="navbar-brand brand-logo mr-5" href="/"><img
-                        src=""
-                        className="mr-2" alt="logo" /></a>
+                    <a className="navbar-brand brand-logo mr-5" href="/">
+                        {/*<h2 className="card-title">Talily</h2>*/}
+                        <img src={logo}
+                             className="mr-3" alt="logo"/>
+                        {/*<img src={logo} className="App-logo" alt="logo" />*/}
+                    </a>
                     <a className="navbar-brand brand-logo-mini" href="/"><img src="images/logo-mini.svg"
                         alt="logo" /></a>
                 </div>

@@ -34,9 +34,9 @@ function TexteJuridique(props) {
                 <td>{props.texte.type.name}</td>
                 <td><button onClick={() => addToFavorite(props.texte.id)}>Favori</button></td>
             </tr>
-            <tr><td colSpan={6}><p><b>Notes : </b>{props.texte.notes}</p></td></tr>
-            <tr><td colSpan={6}><p><b>Sources : </b>{props.texte.sources}</p></td></tr>
-            <tr><td colSpan={6}><p><b>Categorie : </b>{props.texte.category.name}</p></td></tr>
+            {/*<tr><td colSpan={6}><p><b>Notes : </b>{props.texte.notes}</p></td></tr>*/}
+            {/*<tr><td colSpan={6}><p><b>Sources : </b>{props.texte.sources}</p></td></tr>*/}
+            {/*<tr><td colSpan={6}><p><b>Categorie : </b>{props.texte.category.name}</p></td></tr>*/}
         </tbody>
     )
 };

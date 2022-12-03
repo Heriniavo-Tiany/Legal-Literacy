@@ -27,7 +27,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Madagascar/>}/>
                 <Route path='thematiques' element={<div>
-
+                    <br/><br/><br/><br/><br/>
                     <select className="custom-select" style={{width: 200}} onChange={changeLanguageHandler}>
                         <option value="fr">Français</option>
                         <option value="mg">Malagasy</option>
