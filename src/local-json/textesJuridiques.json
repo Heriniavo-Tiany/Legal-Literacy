@@ -1,20 +1,24 @@
 [
 
     {
-         "id": "1",
-         "date": "2004-11-1",
-         "type":{
-          "id": "14",
-          "name": "Convention"
-          },
-         "number": "C2004",
-         "subject":"",
-         "state":0,
-         "notes" : "",
-         "sources": "Nations Unis",
-         "contentMG": { "raw": "htmlMG"},
-         "contentFR": { "raw": ""},
-          "category":   {
+        "id": "1",
+        "date": "2004-11-1",
+        "type": {
+            "id": "14",
+            "name": "Convention"
+        },
+        "number": "C2004",
+        "subject": "",
+        "state": 0,
+        "notes": "",
+        "sources": "Nations Unis",
+        "contentMG": {
+            "raw": "htmlMG"
+        },
+        "contentFR": {
+            "raw": ""
+        },
+        "category": {
             "id": "1",
             "name": "Corruption et Engagement d’un représentant du gouvernement",
             "description": "",
@@ -43,108 +47,109 @@
             "icon": "",
             "common": false
         }
-      },
-      {
-         "id": "3",
-         "date": "2017-05-30",
-         "type":      {
+    },
+    {
+        "id": "3",
+        "date": "2017-05-30",
+        "type": {
             "id": "5",
             "name": "Décret"
-          },
-         "number": "2017- 415",
-         "subject":"fixant les modalités et les conditions d’application de la LOI n° 2015- 005",
-         "state":0,
-         "notes" : "",
-         "sources": "Multiples",
-         "contentMG": { "raw": "html MG"},
-         "contentFR": { "raw": "htmlFR"},
-          "category":          {
+        },
+        "number": "2017- 415",
+        "subject": "fixant les modalités et les conditions d’application de la LOI n° 2015- 005",
+        "state": 0,
+        "notes": "",
+        "sources": "Multiples",
+        "contentMG": {
+            "raw": "html MG"
+        },
+        "contentFR": {
+            "raw": "htmlFR"
+        },
+        "category": {
             "id": "3",
             "name": "Faune",
             "description": "",
             "icon": "",
             "common": false
         }
-      },
-      {
-         "id": "4",
-         "date": "2015-01-20",
-         "type":          {
+    },
+    {
+        "id": "4",
+        "date": "2015-01-20",
+        "type": {
             "id": "3",
             "name": "Loi"
-          },
-         "number": "2015-003",
-         "subject":"portant Charte de l’Environnement Malagasy actualisée",
-         "state":0,
-         "notes" : "",
-         "sources": "ASSEMBLEE NATIONALE",
-         "contentMG": { "raw": "html MG"},
-         "contentFR": { "raw": "htmlFR"},
-          "category":        {
+        },
+        "number": "2015-003",
+        "subject": "portant Charte de l’Environnement Malagasy actualisée",
+        "state": 0,
+        "notes": "",
+        "sources": "ASSEMBLEE NATIONALE",
+        "contentMG": {
+            "raw": "html MG"
+        },
+        "contentFR": {
+            "raw": "htmlFR"
+        },
+        "category": {
             "id": "4",
             "name": "Flore",
             "description": "",
             "icon": "",
             "common": true
         }
-      },
-      
-      {
-         "id": "5",
-         "date": "",
-         "type":        {
+    },
+    {
+        "id": "5",
+        "date": "2017-02-05",
+        "type": {
             "id": "3",
             "name": "Loi"
-          },
-         "number": "",
-         "subject":"CODE DE PROCEDURE PENALE",
-         "state":0,
-         "notes" : "",
-         "sources": "",
-         "contentMG": { "raw": "html MG"},
-         "contentFR": { "raw": "htmlFR"},
-          "category":         {
+        },
+        "number": "",
+        "subject": "CODE DE PROCEDURE PENALE",
+        "state": 0,
+        "notes": "",
+        "sources": "",
+        "contentMG": {
+            "raw": "html MG"
+        },
+        "contentFR": {
+            "raw": "htmlFR"
+        },
+        "category": {
             "id": "5",
             "name": "Organisation de la lutte contre la corruption",
             "description": "",
             "icon": "",
             "common": true
         }
-      },
-      {
-         "id": "",
-         "date": "",
-         "type":     "",
-         "number": "",
-         "subject":"",
-         "state":0,
-         "notes" : "",
-         "sources": "",
-         "contentMG": { "raw": "html MG"},
-         "contentFR": { "raw": "htmlFR"},
-          "category":     ""
-      },
-      {
-         "id": "",
-         "date": "2019-07-05",
-         "type":         {
+    },
+    {
+        "id": "6",
+        "date": "2019-07-05",
+        "type": {
             "id": "4",
             "name": "Ordonnance"
-          },
-         "number": "2019-015",
-         "subject":"RELATIVE AU RECOUVREMENT DES AVOIRS ILLICITES",
-         "state":0,
-         "notes" : "",
-         "sources": "LE PRESIDENT DE LA REPUBLIQUE",
-         "contentMG": { "raw": "html MG"},
-         "contentFR": { "raw": "htmlFR"},
-          "category":         {
+        },
+        "number": "2019-015",
+        "subject": "RELATIVE AU RECOUVREMENT DES AVOIRS ILLICITES",
+        "state": 0,
+        "notes": "",
+        "sources": "LE PRESIDENT DE LA REPUBLIQUE",
+        "contentMG": {
+            "raw": "html MG"
+        },
+        "contentFR": {
+            "raw": "htmlFR"
+        },
+        "category": {
             "id": "6",
             "name": "Répression et principes",
             "description": "",
             "icon": "",
             "common": false
         }
-      }
-   
+    }
 ]

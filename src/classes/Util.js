@@ -3,12 +3,12 @@ import thematiques from '../local-json/thematiques.json';
 import news from '../local-json/regions.json';
 
 export function getTextesJuridiques() {
-    if (true) { // offline
+    if (true) {
         return textesJuridiques;
     } else {
         let result = [];
 
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("http://localhost:8081/textes")
             .then((response) => response.json())
             .then((json) => {
                 result.push(json);
@@ -19,12 +19,12 @@ export function getTextesJuridiques() {
 }
 
 export function getThematiques() {
-    if (true) { // offline
+    if (true) {
         return thematiques;
     } else {
         let result = [];
 
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("http://localhost:8081/thematiques")
             .then((response) => response.json())
             .then((json) => {
                 result.push(json);
@@ -35,12 +35,12 @@ export function getThematiques() {
 }
 
 export function getNews() {
-    if (true) { // offline
+    if (true) {
         return news;
     } else {
         let result = [];
 
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("http://localhost:8081/news")
             .then((response) => response.json())
             .then((json) => {
                 result.push(json);

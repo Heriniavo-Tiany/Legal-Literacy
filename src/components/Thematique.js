@@ -24,7 +24,7 @@ class Thematique extends Component {
                 </div>
                 <div className="col-md-4 grid-margin">
                     <div className="content-wrapper">
-                        <h2 className="card-title">Toutes les Thématiques</h2>
+                        <h2 className="card-title">{t('Toutes les Thématiques')}</h2>
                         <ListThematiques/>
                     </div>
                 </div>

@@ -16,7 +16,6 @@ if (id === null) {
 }
 
 const json = news.filter((data) => {
-    // console.log(data.region.id)
     return data.id === id
 })
 const data = json[0]
