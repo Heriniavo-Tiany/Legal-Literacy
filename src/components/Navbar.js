@@ -42,7 +42,7 @@ class Navbar extends Component {
                     <Link to='favoris'><button className="btn">Favoris</button></Link>
                     <button className="btn">Aide</button>
                     <button className="btn">Assistance</button>
-                    <button className="btn">Langue</button>
+                    <Link to="signalement"><button>Signaler</button></Link>
 
                     <div className="dropdown">
                         <button className="btn dropdown-toggle" type="button" id="dropdownMenuIconButton1"
@@ -53,10 +53,6 @@ class Navbar extends Component {
                             <Link to='?langue=fr' className="dropdown-item" >Français</Link>
                             <Link to='?langue=mg' className="dropdown-item" >Malagasy</Link>
                         </div>
-
-
-
-
                     </div>
 
                 </div>

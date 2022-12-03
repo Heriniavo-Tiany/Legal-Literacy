@@ -7,6 +7,7 @@ import Favoris from "./components/Favoris";
 import RechercheAvance from "./components/RechercheAvance";
 import {getTextesJuridiques} from './classes/Util.js';
 import {useTranslation} from "react-i18next";
+import Signalement from './components/Signalement';
 
 const textes = getTextesJuridiques();
 
@@ -36,6 +37,7 @@ function App() {
                 <Route path='rechercheAvance' element={<RechercheAvance/>}/>
                 <Route path='textesJuridiques' element={<TextesJuridiques textes={textes}/>}/>
                 <Route path='favoris' element={<Favoris textes={textes} />} />
+                <Route path='signalement' element={<Signalement />} />
             </Routes>
         </BrowserRouter>
     );
