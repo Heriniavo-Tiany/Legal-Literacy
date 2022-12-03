@@ -5,13 +5,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Thematique from "./components/Thematique";
 import Favoris from "./components/Favoris";
 import RechercheAvance from "./components/RechercheAvance";
-import { getTextesJuridiques } from './classes/Util.js';
+import { getBuzz, getTextesJuridiques } from './classes/Util.js';
 import { useTranslation } from "react-i18next";
 import Madagascar from "./components/Madagascar";
 import Signalement from './components/Signalement';
 import Buzz from './components/Buzz';
 
 const textes = getTextesJuridiques();
+const buzz = getBuzz();
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -22,14 +23,6 @@ function App() {
         i18n.changeLanguage(languageValue);
     }
 
-    const buzz = {
-        "title": "Harecelement",
-        "content": "Une jeune fille se fait harcelement depuis la maternelle",
-        "lois": [
-            { "name": "arrete15" },
-            { "name": "loi01" }
-        ]
-    };
     console.log(buzz);
 
     return (
@@ -42,7 +35,7 @@ function App() {
                         <Buzz buzz={buzz} />
                     </div>
                 } />
-                
+
                 <Route path='thematiques' element={
                     <div>
                         <br /><br /><br /><br /><br />

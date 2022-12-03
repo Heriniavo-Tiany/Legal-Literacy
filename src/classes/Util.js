@@ -1,6 +1,7 @@
 import textesJuridiques from '../local-json/textesJuridiques.json';
 import thematiques from '../local-json/thematiques.json';
 import news from '../local-json/regions.json';
+import buzz from '../local-json/buzz.json';
 
 export function getTextesJuridiques() {
     if (true) {
@@ -41,6 +42,22 @@ export function getNews() {
         let result = [];
 
         fetch("http://localhost:8081/news")
+            .then((response) => response.json())
+            .then((json) => {
+                result.push(json);
+            });
+
+        return result;
+    }
+}
+
+export function getBuzz() {
+    if (true) {
+        return buzz;
+    } else {
+        let result = [];
+
+        fetch("http://localhost:8081/buzz")
             .then((response) => response.json())
             .then((json) => {
                 result.push(json);
