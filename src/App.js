@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Thematique from "./components/Thematique";
 import Favoris from "./components/Favoris";
 import RechercheAvance from "./components/RechercheAvance";
-import {getTextesJuridiques} from './classes/Util.js';
-import {useTranslation} from "react-i18next";
+import { getTextesJuridiques } from './classes/Util.js';
+import { useTranslation } from "react-i18next";
 import Madagascar from "./components/Madagascar";
 import Signalement from './components/Signalement';
 import Buzz from './components/Buzz';
@@ -26,29 +26,33 @@ function App() {
         "title": "Harecelement",
         "content": "Une jeune fille se fait harcelement depuis la maternelle",
         "lois": [
-            {"name": "arrete15"},
-            {"name": "loi01"}
+            { "name": "arrete15" },
+            { "name": "loi01" }
         ]
     };
     console.log(buzz);
 
     return (
         <BrowserRouter>
-            <Navbar/>
+            <Navbar />
             <Routes>
                 <Route path='/' element={
-                <div>
-                    <Madagascar/>
-                    <Buzz buzz={buzz} />
-                </div>
-                }/>
-                <Route path='thematiques' element={<div>
-                    <br/><br/><br/><br/><br/>
-                    <select className="custom-select" style={{width: 200}} onChange={changeLanguageHandler}>
-                        <option value="fr">Français</option>
-                        <option value="mg">Malagasy</option>
-                    </select>
-                    <Thematique /></div>} />
+                    <div>
+                        <Madagascar />
+                        <Buzz buzz={buzz} />
+                    </div>
+                } />
+                
+                <Route path='thematiques' element={
+                    <div>
+                        <br /><br /><br /><br /><br />
+                        <select className="custom-select" style={{ width: 200 }} onChange={changeLanguageHandler}>
+                            <option value="fr">Français</option>
+                            <option value="mg">Malagasy</option>
+                        </select>
+                        <Thematique />
+                    </div>
+                } />
 
                 <Route path='rechercheAvance' element={<RechercheAvance />} />
 
