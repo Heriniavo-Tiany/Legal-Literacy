@@ -23,9 +23,9 @@ function App() {
 
     return (
         <BrowserRouter>
-            <Navbar/><br/><br/><br/><br/>
+            <Navbar/>
             <Routes>
-                <Route path='/' element={<Navbar/>}/>
+                <Route path='/' element={<Madagascar/>}/>
                 <Route path='thematiques' element={<div>
 
                     <select className="custom-select" style={{width: 200}} onChange={changeLanguageHandler}>
