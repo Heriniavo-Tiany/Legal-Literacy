@@ -24,13 +24,21 @@ function addToFavorite(id) {
 }
 
 function TexteJuridique(props) {
+    let etat = "";
+
+    if (props.texte.state == 0) {
+        etat = <td>En vigueur</td>;
+    } else {
+        etat = <td>Aborge</td>;
+    }
+
     return (
         <tbody>
             <tr>
                 <td>{props.texte.type.name + props.texte.number}</td>
                 <td>{props.texte.subject}</td>
                 <td>{props.texte.date}</td>
-                <td>{props.texte.state}</td>
+                {etat}
                 <td>{props.texte.type.name}</td>
                 <td><button className="btn btn-primary" onClick={() => addToFavorite(props.texte.id)}>Favori</button></td>
             </tr>
