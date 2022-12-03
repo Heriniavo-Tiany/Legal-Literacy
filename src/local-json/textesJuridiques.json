@@ -105,7 +105,7 @@
     },
     {
         "id": "5",
-        "date": "",
+        "date": "2017-02-05",
         "type": {
             "id": "3",
             "name": "Loi"
@@ -131,23 +131,6 @@
     },
     {
         "id": "6",
-        "date": "",
-        "type": "",
-        "number": "",
-        "subject": "",
-        "state": 0,
-        "notes": "",
-        "sources": "",
-        "contentMG": {
-            "raw": "html MG"
-        },
-        "contentFR": {
-            "raw": "htmlFR"
-        },
-        "category": ""
-    },
-    {
-        "id": "7",
         "date": "2019-07-05",
         "type": {
             "id": "4",
