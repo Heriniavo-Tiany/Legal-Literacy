@@ -32,7 +32,6 @@ function App() {
                 <Route path='/' element={
                     <div>
                         <Madagascar />
-                        <Buzz buzz={buzz} />
                     </div>
                 } />
 

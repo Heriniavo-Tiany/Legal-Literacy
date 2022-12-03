@@ -40,7 +40,7 @@ class Madagascar extends Component {
             <div>
                 <br/>
                 <br/>
-                <Buzz buzz={buzz} />
+
                 <div className="row">
                     <div className="col-md-12 grid-margin">
                         <div className="content-wrapper">
@@ -192,6 +192,26 @@ class Madagascar extends Component {
                                                 </div>
                                             </div>
                                         </div>
+
+                                        {/*---------------------------------*/}
+                                        <div className="map__list">
+                                            <div className="col-md-12 grid-margin transparent">
+                                                <h2 className="card-title">Buzzs</h2>
+                                                <div className="row">
+                                                    <div className="col-md-12 mb-4 stretch-card transparent">
+                                                        <div className="card card-inverse-dark">
+                                                            <div className="card-body">
+                                                                <Buzz buzz={buzz} />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        {/*---------------------------------*/}
+
 
                                     </div>
                                 </div>

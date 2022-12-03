@@ -5,19 +5,20 @@ function Buzz(props) {
     let lois = [];
 
     props.buzz.lois.forEach(loi => {
-        lois.push(<li>{loi.name}</li>)
+        lois.push(<p><button className='btn btn-primary'>{loi.name}</button></p>)
     });
 
     return (
         <div>
-            <h2>Buzz</h2>
             <div>
-                <h3>{props.buzz.title}</h3>
-                <p>{props.buzz.content}</p>
+                <h1>{props.buzz.title}</h1>
+                <h3>{props.buzz.content}</h3>
                 <div>
-                    <ul>
+                    <br/><br/>
+                    <h2 className="card-title">Lois en rapport: </h2>
+                    {/*<ul>*/}
                         {lois}
-                    </ul>
+                    {/*</ul>*/}
                 </div>
             </div>
         </div>

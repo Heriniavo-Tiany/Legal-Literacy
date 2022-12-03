@@ -1,4 +1,7 @@
+.buzz {
+  box-shadow: 2px, 2px, 2px, var(--talily-primary-black) !important;
 
+}
 
 .App {
   text-align: center;
