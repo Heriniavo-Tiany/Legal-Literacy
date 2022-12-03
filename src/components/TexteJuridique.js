@@ -32,7 +32,7 @@ function TexteJuridique(props) {
                 <td>{props.texte.date}</td>
                 <td>{props.texte.state}</td>
                 <td>{props.texte.type.name}</td>
-                <td><button onClick={() => addToFavorite(props.texte.id)}>Favori</button></td>
+                <td><button className="btn btn-primary" onClick={() => addToFavorite(props.texte.id)}>Favori</button></td>
             </tr>
             {/*<tr><td colSpan={6}><p><b>Notes : </b>{props.texte.notes}</p></td></tr>*/}
             {/*<tr><td colSpan={6}><p><b>Sources : </b>{props.texte.sources}</p></td></tr>*/}
