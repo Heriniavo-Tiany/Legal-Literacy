@@ -1,0 +1,266 @@
+[
+    {
+        "id": "region-FI-VF",
+        "name": "Vatovavy-Fitovinany",
+        "good": {
+            "title": "Sauvetage d'animaux",
+            "description": "Pendant la crise politique institutionnelle"
+        },
+        "bad": {
+            "title": "Traffic de bois de rose",
+            "description": "Pendant la crise politique institutionnelle"
+        }
+    },
+    {
+        "id": "region-AV-VA",
+        "name": "Vakinankaratra",
+        "good": {
+            "title": "region-AV-VA title",
+            "description":  "region-AV-VA description"
+        },
+        "bad": {
+            "title": "region-AV-VA title",
+            "description":  "region-AV-VA describ"
+        }
+    },
+    {
+        "id": "region-MA-SF",
+        "name": "Sofia",
+        "good": {
+            "title": "region-MA-SF title",
+            "description":  "region-MA-SF description"
+        },
+        "bad": {
+            "title": "region-MA-SF title",
+            "description":  "region-MA-SF describ"
+        }
+    },
+    {
+        "id": "region-AS-SV",
+        "name": "Sava",
+        "good": {
+            "title": "region-AS-SV title",
+            "description":  "region-AS-SV description"
+        },
+        "bad": {
+            "title": "region-AS-SV title",
+            "description":  "region-AS-SV describ"
+        }
+    },
+    {
+        "id": "region-TL-ME",
+        "name": "Menabe",
+        "good": {
+            "title": "CJE Morondava",
+            "description":  "Ouverture de la clinique juridique de l'environnement à Morondava, Menabe"
+        },
+        "bad": {
+            "title": "Coupe illicite de bois",
+            "description":  "vohibola"
+        }
+    },
+    {
+        "id": "region-MA-ME",
+        "name": "Melaky",
+        "good": {
+            "title": "region-MA-ME title",
+            "description":  "region-MA-ME description"
+        },
+        "bad": {
+            "title": "Feux de forêt",
+            "description":  "vohibola"
+        }
+    },
+    {
+        "id": "region-AV-IT",
+        "name": "Itasy",
+        "good": {
+            "title": "Pollution de l'eau",
+            "description":  "Mandena"
+        },
+        "bad": {
+            "title": "Braconnage de lémuriens",
+            "description":  "vohibola"
+        }
+    },
+    {
+        "id": "region-FI-HO",
+        "name": "Ihorombe",
+        "good": {
+            "title": "region-FI-HO title",
+            "description":  "region-FI-HO description"
+        },
+        "bad": {
+            "title": "region-FI-HO title",
+            "description":  "region-FI-HO describ"
+        }
+    },
+    {
+        "id": "region-FI-HM",
+        "name": "Haute Matsiatra",
+        "good": {
+            "title": "region-FI-HM title",
+            "description":  "region-FI-HM description"
+        },
+        "bad": {
+            "title": "region-FI-HM title",
+            "description":  "region-FI-HM describ"
+        }
+    },
+    {
+        "id": "region-AS-DI",
+        "name": "Diana",
+        "good": {
+            "title": "region-AS-DI title",
+            "description":  "region-AS-DI description"
+        },
+        "bad": {
+            "title": "region-AS-DI title",
+            "description":  "region-AS-DI describ"
+        }
+    },
+    {
+        "id": "region-AV-BO",
+        "name": "Bongolava",
+        "good": {
+            "title": "region-AV-BO title",
+            "description":  "region-AV-BO description"
+        },
+        "bad": {
+            "title": "region-AV-BO title",
+            "description":  "region-AV-BO describ"
+        }
+    },
+    {
+        "id": "region-MA-BO",
+        "name": "Boeny",
+        "good": {
+            "title": "region-MA-BO title",
+            "description":  "region-MA-BO description"
+        },
+        "bad": {
+            "title": "region-MA-BO title",
+            "description":  "region-MA-BO describ"
+        }
+    },
+    {
+        "id": "region-MA-BE",
+        "name": "Betsiboka",
+        "good": {
+            "title": "region-MA-BE title",
+            "description":  "region-MA-BE description"
+        },
+        "bad": {
+            "title": "region-MA-BE title",
+            "description":  "region-MA-BE describ"
+        }
+    },
+    {
+        "id": "region-TM-AI",
+        "name": "Atsinanana",
+        "good": {
+            "title": "region-TM-AI title",
+            "description":  "region-TM-AI description"
+        },
+        "bad": {
+            "title": "region-TM-AI title",
+            "description":  "region-TM-AI describ"
+        }
+    },
+    {
+        "id": "region-FI-AA",
+        "name": "Atsimo-Atsinanana",
+        "good": {
+            "title": "region-FI-AA title",
+            "description":  "region-FI-AA description"
+        },
+        "bad": {
+            "title": "region-FI-AA title",
+            "description":  "region-FI-AA describ"
+        }
+    },
+    {
+        "id": "region-TL-AF",
+        "name": "Atsimo-Andrefana",
+        "good": {
+            "title": "region-TL-AF title",
+            "description":  "region-TL-AF description"
+        },
+        "bad": {
+            "title": "region-TL-AF title",
+            "description":  "region-TL-AF describ"
+        }
+    },
+    {
+        "id": "region-TL-AY",
+        "name": "Anosy",
+        "good": {
+            "title": "region-TL-AY title",
+            "description":  "region-TL-AY description"
+        },
+        "bad": {
+            "title": "region-TL-AY title",
+            "description":  "region-TL-AY describ"
+        }
+    },
+    {
+        "id": "region-TL-AD",
+        "name": "Androy",
+        "good": {
+            "title": "region-TL-AD title",
+            "description":  "region-TL-AD description"
+        },
+        "bad": {
+            "title": "region-TL-AD title",
+            "description":  "region-TL-AD describ"
+        }
+    },
+    {
+        "id": "region-TM-AN",
+        "name": "Analanjirofo",
+        "good": {
+            "title": "region-TM-AN title",
+            "description":  "region-TM-AN description"
+        },
+        "bad": {
+            "title": "region-TM-AN title",
+            "description":  "region-TM-AN describ"
+        }
+    },
+    {
+        "id": "region-AV-AG",
+        "name": "Analamanga",
+        "good": {
+            "title": "CJE Antananarivo",
+            "description":   "Ouverture de la clinique juridique de l'environnement à Morondava, Menabe"
+        },
+        "bad": {
+            "title": "Trafics illicites d'animaux",
+            "description":  "Pendant la crise politique institutionnelle"
+        }
+    },
+    {
+        "id": "region-FI-AM",
+        "name": "Amoron'i Mania",
+        "good": {
+            "title": "region-FI-AM title",
+            "description":  "region-FI-AM description"
+        },
+        "bad": {
+            "title": "region-FI-AM title",
+            "description":  "region-FI-AM describ"
+        }
+    },
+    {
+        "id": "region-TM-AO",
+        "name": "Alaotra-Mangoro",
+        "good": {
+            "title": "region-TM-AO title",
+            "description":  "region-TM-AO description"
+        },
+        "bad": {
+            "title": "region-TM-AO title",
+            "description":  "region-TM-AO describ"
+        }
+    }
+]

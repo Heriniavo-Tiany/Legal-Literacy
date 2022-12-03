@@ -6,6 +6,7 @@ import Thematique from "./components/Thematique";
 import RechercheAvance from "./components/RechercheAvance";
 import {getTextesJuridiques} from './classes/Util.js';
 import {useTranslation} from "react-i18next";
+import Madagascar from "./components/Madagascar";
 
 const textes = getTextesJuridiques();
 
@@ -34,6 +35,7 @@ function App() {
                     <Thematique/></div>}/>
                 <Route path='rechercheAvance' element={<RechercheAvance/>}/>
                 <Route path='textesJuridiques' element={<TextesJuridiques textes={textes}/>}/>
+                <Route path='madagascar' element={<Madagascar/>}/>
             </Routes>
         </BrowserRouter>
     );
