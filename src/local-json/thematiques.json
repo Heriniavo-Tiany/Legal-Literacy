@@ -1,42 +1,54 @@
 [
     {
         "id": "1",
+        "value": "1",
         "name": "Corruption et Engagement d’un représentant du gouvernement",
+        "label": "Corruption et Engagement d’un représentant du gouvernement",
         "description": "La corruption du représentant de l'Etat n'est pas aisée à définir : « La corruption comprend deux éléments essentiels : d'une part, l'existence d'offres, promesses ou dons préalables à l'expression d'un consentement et, d'autre part, l'existence d'un rapport entre ces offres»",
         "icon": "",
         "common": false
     },
     {
         "id": "2",
+        "value": "2",
         "name": "Déontologie et bonne conduite des agents publics",
+        "label": "Déontologie et bonne conduite des agents publics",
         "description": "Promulguée le 21 avril 2016, la loi relative à la déontologie et aux droits et obligations des fonctionnaires modifie le cadre juridique de la fonction publique. Elle concerne aussi le recrutement des futurs agents public, les contractuels, la parité... Zoom sur les principaux changements apportés par le texte.",
         "icon": "",
         "common": false
     },
     {
         "id": "3",
+        "value": "3",
         "name": "Faune",
+        "label": "Faune",
         "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
         "icon": "",
         "common": false
     },
     {
         "id": "4",
+        "value": "4",
         "name": "Flore",
+        "label": "Flore",
         "description": "L’objectif est de promouvoir une approche pratique pour renforcer l’application effective de la loi et pour lutter contre le braconnage et le commerce illicite des espèces fauniques et floristiques sur tout le territoire national.",
         "icon": "",
         "common": true
     },
     {
         "id": "5",
+        "value": "5",
         "name": "Organisation de la lutte contre la corruption",
+        "label": "Organisation de la lutte contre la corruption",
         "description": "Certains pays ont institué des services spéciaux pour lutter contre la corruption. L'Allemagne compte notamment des \"sections anticorruption\" dans de nombreux Länder, et deux grandes villes possèdent des départements spécialisés dépendant du ministère public qui tiennent des «registres de corruption».",
         "icon": "",
         "common": true
     },
     {
         "id": "6",
+        "value": "6",
         "name": "Répression et principes",
+        "label": "Répression et principes",
         "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
         "icon": "",
         "common": false

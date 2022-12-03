@@ -1,19 +1,89 @@
 import React, {Component} from "react";
-import {getTextesJuridiques} from '../classes/Util';
+import {getTextesJuridiques, getThematiques} from '../classes/Util';
 
 import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 import TextesJuridiques from "./TextesJuridiques";
+import {search} from "./data";
 
-const textes = getTextesJuridiques();
+const json = getThematiques();
+
+// const textes = getTextesJuridiques();
+
+
+/*-----------------------------------------------------*/
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var s = urlParams.get('s');
+var textes = getTextesJuridiques();
+if (s !== null) {
+    textes = search(urlParams.get('keyword'), "2011-01-01", "2016-01-01", urlParams.get('type'), urlParams.get('category'), null);
+}
+
+
+/*-----------------------------------------------------*/
 
 
 const animatedComponents = makeAnimated();
 
-const colourOptions = [
-    {value: 'chocolate', label: 'Chocolate'},
-    {value: 'strawberry', label: 'Strawberry'},
-    {value: 'vanilla', label: 'Vanilla'}
+
+const types = [
+    {
+        "value": "1",
+        "label": "Loi constitutionnelle"
+    },
+    {
+        "value": "2",
+        "label": "Loi organique"
+    },
+    {
+        "value": "3",
+        "label": "Loi"
+    },
+    {
+        "value": "4",
+        "label": "Ordonnance"
+    },
+    {
+        "value": "5",
+        "label": "Décret"
+    },
+    {
+        "value": "6",
+        "label": "Arrêté"
+    },
+    {
+        "value": "7",
+        "label": "Circulaire"
+    },
+    {
+        "value": "8",
+        "label": "Décision"
+    },
+    {
+        "value": "9",
+        "label": "Instruction"
+    },
+    {
+        "value": "10",
+        "label": "Note"
+    },
+    {
+        "value": "11",
+        "label": "Délibération"
+    },
+    {
+        "value": "12",
+        "label": "Avis"
+    },
+    {
+        "value": "13",
+        "label": "Palmarès"
+    },
+    {
+        "value": "14",
+        "label": "Procès-verbal"
+    }
 ]
 
 function RechercheAvance() {
@@ -25,7 +95,13 @@ function RechercheAvance() {
                         <div className="card">
                             <div className="card-body">
                                 <h4 className="card-title">Filtre</h4>
-                                <form className="row g-3">
+                                <form className="row g-3" action="" method="get">
+                                    <input type="text" name="s" value="e" hidden />
+                                    <div className="col-12">
+                                        <label htmlFor="inputdate" className="form-label">Mot clé</label>
+                                        <input type="text" className="form-control" id="inputdate" name="keyword"/>
+                                        <br/>
+                                    </div>
                                     <div className="col-12">
                                         <label htmlFor="inputdate" className="form-label">Date</label>
                                         <input type="date" className="form-control" id="inputdate"/>
@@ -39,12 +115,13 @@ function RechercheAvance() {
                                     <div className="col-12">
                                         <label htmlFor="inputType" className="form-label">Type</label>
                                         <Select
+                                            name="type"
                                             id="inputType"
                                             closeMenuOnSelect={false}
                                             components={animatedComponents}
-                                            defaultValue={[colourOptions[4], colourOptions[5]]}
+                                            defaultValue={[]}
                                             isMulti
-                                            options={colourOptions}
+                                            options={types}
                                         />
                                         <br/>
                                     </div>
@@ -52,12 +129,13 @@ function RechercheAvance() {
                                     <div className="col-12">
                                         <label htmlFor="inputThematique" className="form-label">Thématique</label>
                                         <Select
+                                            name="category"
                                             id="inputThematique"
                                             closeMenuOnSelect={false}
                                             components={animatedComponents}
-                                            defaultValue={[colourOptions[4], colourOptions[5]]}
+                                            defaultValue={[]}
                                             isMulti
-                                            options={colourOptions}
+                                            options={json}
                                         />
                                         <br/>
                                     </div>
@@ -68,7 +146,7 @@ function RechercheAvance() {
                                         <div className="col-sm-10">
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" name="state"
-                                                       id="chk1" value="EnVigueur"/>
+                                                       id="chk1" value="0"/>
                                                 <label className="form-check-label" htmlFor="chk1">
                                                     En Vigueur
                                                 </label>
@@ -76,7 +154,7 @@ function RechercheAvance() {
 
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" name="state"
-                                                       id="chk2" value="aborge"/>
+                                                       id="chk2" value="1"/>
                                                 <label className="form-check-label" htmlFor="chk2">
                                                     Aborgé
                                                 </label>
@@ -84,6 +162,7 @@ function RechercheAvance() {
 
                                         </div>
                                     </div>
+                                    <input type="submit"/>
                                 </form>
 
 
