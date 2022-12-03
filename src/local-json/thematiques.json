@@ -2,14 +2,14 @@
     {
         "id": "1",
         "name": "Corruption et Engagement d’un représentant du gouvernement",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
+        "description": "La corruption du représentant de l'Etat n'est pas aisée à définir : « La corruption comprend deux éléments essentiels : d'une part, l'existence d'offres, promesses ou dons préalables à l'expression d'un consentement et, d'autre part, l'existence d'un rapport entre ces offres»",
         "icon": "",
         "common": false
     },
     {
         "id": "2",
         "name": "Déontologie et bonne conduite des agents publics",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
+        "description": "Promulguée le 21 avril 2016, la loi relative à la déontologie et aux droits et obligations des fonctionnaires modifie le cadre juridique de la fonction publique. Elle concerne aussi le recrutement des futurs agents public, les contractuels, la parité... Zoom sur les principaux changements apportés par le texte.",
         "icon": "",
         "common": false
     },
@@ -23,14 +23,14 @@
     {
         "id": "4",
         "name": "Flore",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
+        "description": "L’objectif est de promouvoir une approche pratique pour renforcer l’application effective de la loi et pour lutter contre le braconnage et le commerce illicite des espèces fauniques et floristiques sur tout le territoire national.",
         "icon": "",
         "common": true
     },
     {
         "id": "5",
         "name": "Organisation de la lutte contre la corruption",
-        "description": "Adipisci aperiam architecto autem, consectetur delectus eaque eligendi facilis fuga harum libero maiores minima nesciunt nulla quisquam repellat soluta voluptatem. At autem eum facere numquam optio perspiciatis, sed sequi sit!",
+        "description": "Certains pays ont institué des services spéciaux pour lutter contre la corruption. L'Allemagne compte notamment des \"sections anticorruption\" dans de nombreux Länder, et deux grandes villes possèdent des départements spécialisés dépendant du ministère public qui tiennent des «registres de corruption».",
         "icon": "",
         "common": true
     },

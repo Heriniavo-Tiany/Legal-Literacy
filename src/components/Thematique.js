@@ -16,7 +16,7 @@ class Thematique extends Component {
                         <h2 className="card-title">{t('Thématiques Fréquentes')}</h2>
                         <div className="row">
                             <ThematiqueFrequent id="1"/>
-                            <ThematiqueFrequent id="2"/>
+                            <ThematiqueFrequent id="0"/>
                             <ThematiqueFrequent id="3"/>
                             <ThematiqueFrequent id="4"/>
                         </div>
@@ -63,7 +63,8 @@ function ThematiqueFrequent(props) {
                 <div className="card-body">
                     <h4 className="card-title">{t(json[props.id].name)}</h4>
                     <p className="card-description">
-                        {json[props.id].description}
+                        {/*{json[props.id].description}*/}
+                        {t(json[props.id].description)}
                     </p>
                 </div>
             </div>
