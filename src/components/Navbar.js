@@ -18,26 +18,17 @@ class Navbar extends Component {
                         data-toggle="minimize">
                         <span className="icon-menu"></span>
                     </button>
-                    <ul className="navbar-nav mr-lg-2">
-                        <li className="nav-item nav-search d-none d-lg-block">
-                            <div className="input-group">
-                                <div className="input-group-prepend hover-cursor" id="navbar-search-icon">
-                                    <span className="input-group-text" id="search">
-                                        <i className="icon-search"></i>
-                                    </span>
-                                </div>
-                                <input type="text" className="form-control" id="navbar-search-input"
-                                    placeholder="Search now" aria-label="search" aria-describedby="search" />
-                            </div>
-                        </li>
-                    </ul>
+                    
                     <ul className="navbar-nav navbar-nav-right">
                     </ul>
                     <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                         data-toggle="offcanvas">
                         <span className="icon-menu"></span>
                     </button>
-                    <Link to='thematiques'> <button className="btn">Thématique</button></Link>
+
+
+                    <Link to='rechercheAvance'> <button className="btn">Recherche</button></Link>
+                    <Link to='thematiques'> <button className="btn">Thématiques</button></Link>
                     <Link to="textesJuridiques"><button className="btn">Textes juridiques</button></Link>
                     <Link to='favoris'><button className="btn">Favoris</button></Link>
                     <button className="btn">Aide</button>
