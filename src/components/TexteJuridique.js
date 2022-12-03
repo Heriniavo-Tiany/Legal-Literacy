@@ -29,7 +29,7 @@ function TexteJuridique(props) {
     if (props.texte.state == 0) {
         etat = <td>En vigueur</td>;
     } else {
-        etat = <td>Aborge</td>;
+        etat = <td>Aborgé</td>;
     }
 
     return (
